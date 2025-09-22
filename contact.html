@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Ava</title>
+    <meta name="description" content="Ask Ava is a Montreal-based one-on-one tutoring service that helps high school students build confidence and succeed. Through personalized lesson plans, flexible after-school and Saturday scheduling, and a calm, encouraging teaching style, we support teens in core academics, study and exam preparation, writing and literacy, STEM, and college and career readiness. Every session meets students where they are, reduces stress, and turns small wins into steady progress.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS with Design System -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+  "theme": {
+    "extend": {
+      "fontFamily": {
+        "primary": [
+          "Inter",
+          "system-ui",
+          "sans-serif"
+        ],
+        "secondary": [
+          "Poppins",
+          "system-ui",
+          "sans-serif"
+        ],
+        "display": [
+          "Poppins",
+          "system-ui",
+          "sans-serif"
+        ]
+      },
+      "colors": {
+        "primary": {
+          "50": "#e9effd",
+          "100": "#d3e0fb",
+          "200": "#a8c1f7",
+          "300": "#7ca1f3",
+          "400": "#5182ef",
+          "500": "#2563EB",
+          "600": "#2159d4",
+          "700": "#1e4fbc",
+          "800": "#1a45a5",
+          "900": "#163b8d",
+          "DEFAULT": "#2563EB"
+        },
+        "secondary": {
+          "50": "#f0f1f3",
+          "100": "#e0e3e8",
+          "500": "#64748B",
+          "600": "#5a687d",
+          "700": "#505d6f",
+          "900": "#3c4653",
+          "DEFAULT": "#64748B"
+        },
+        "accent": {
+          "50": "#fef5e7",
+          "100": "#fdecce",
+          "500": "#F59E0B",
+          "600": "#dd8e0a",
+          "700": "#c47e09",
+          "DEFAULT": "#F59E0B"
+        },
+        "brand": {
+          "50": "#e9effd",
+          "100": "#d3e0fb",
+          "500": "#2563EB",
+          "600": "#2159d4",
+          "700": "#1e4fbc",
+          "900": "#163b8d"
+        }
+      },
+      "spacing": {
+        "18": "4.5rem",
+        "88": "22rem",
+        "128": "32rem"
+      },
+      "borderRadius": {
+        "xl": "1rem",
+        "2xl": "1.5rem",
+        "3xl": "2rem"
+      },
+      "boxShadow": {
+        "soft": "0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04)",
+        "medium": "0 4px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 20px -5px rgba(0, 0, 0, 0.04)",
+        "large": "0 10px 40px -10px rgba(0, 0, 0, 0.15), 0 20px 25px -5px rgba(0, 0, 0, 0.04)"
+      },
+      "animation": {
+        "fade-in": "fadeIn 0.5s ease-in-out",
+        "slide-up": "slideUp 0.5s ease-out",
+        "bounce-subtle": "bounceSubtle 2s infinite"
+      },
+      "keyframes": {
+        "fadeIn": {
+          "0%": {
+            "opacity": "0"
+          },
+          "100%": {
+            "opacity": "1"
+          }
+        },
+        "slideUp": {
+          "0%": {
+            "transform": "translateY(20px)",
+            "opacity": "0"
+          },
+          "100%": {
+            "transform": "translateY(0)",
+            "opacity": "1"
+          }
+        },
+        "bounceSubtle": {
+          "0%, 100%": {
+            "transform": "translateY(0)"
+          },
+          "50%": {
+            "transform": "translateY(-5px)"
+          }
+        }
+      }
+    }
+  },
+  "plugins": []
+}
+    </script>
+</head>
+<body class="antialiased font-primary">
+
+      <nav class="bg-white shadow-sm border-b border-gray-200">
+        <div class="container mx-auto px-6">
+          <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+              <a href="/" class="text-2xl font-bold text--600">Ask Ava</a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+              <a href="/" class="text-gray-700 hover:text--600 transition-colors">Home</a>
+              <a href="#about" class="text-gray-700 hover:text--600 transition-colors">About</a>
+              <a href="#services" class="text-gray-700 hover:text--600 transition-colors">Services</a>
+              <a href="#contact" class="text-gray-700 hover:text--600 transition-colors">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+
+      <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Ready to start your project? We&#x27;d love to hear from you.</p>
+          </div>
+          <div class="max-w-4xl mx-auto grid lg:grid-cols-2 gap-12">
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-900 mb-6">Get in Touch</h3>
+              <div class="space-y-6">
+              </div>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-xl">
+              <div class="text-center">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Ready to help your teen feel confident? Contact Ask Ava by phone, email, text, or our contact form to schedule your first session.</h3>
+                <p class="text-gray-600 mb-6">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                <a href="mailto:" class="bg--600 text-white px-8 py-3 rounded-lg font-semibold hover:bg--700 transition-colors inline-block">
+                  Send Message
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+
+      <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+          <div class="grid md:grid-cols-3 gap-8">
+            <div>
+              <h3 class="text-2xl font-bold text--400 mb-4">Ask Ava</h3>
+              <p class="text-gray-300 leading-relaxed"></p>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+              <div class="space-y-2 text-gray-300">
+                
+                
+                
+              </div>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+              <div class="space-y-2">
+                <a href="#about" class="text-gray-300 hover:text--400 transition-colors block">About</a>
+                <a href="#services" class="text-gray-300 hover:text--400 transition-colors block">Services</a>
+                <a href="#contact" class="text-gray-300 hover:text--400 transition-colors block">Contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy;  Ask Ava. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    
+</body>
+</html>
